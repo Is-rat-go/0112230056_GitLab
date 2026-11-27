@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About UIU - Dummy Page</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #f68b1f; /* UIU Signature Orange */
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            font-size: 0.8rem;
+            display: block;
+            font-weight: normal;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav ul li a {
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #f68b1f;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #d97714;
+        }
+
+        /* Container & Sections */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #222;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #f68b1f;
+            margin: 0.5rem auto 0;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .stat-card {
+            background: #fff;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #f68b1f;
+        }
+        .stat-card h3 {
+            font-size: 2.2rem;
+            color: #f68b1f;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Two-Column About Grid */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .about-box h3 {
+            color: #f68b1f;
+            margin-bottom: 1rem;
+        }
+
+        /* Programs List */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .program-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .program-card h4 {
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>UIU</h1>
+            <span>Quest for Excellence (Dummy)</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#campus">Campus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h2>About United International University</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#overview" class="btn">Explore More</a>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Dummy Stats -->
+        <section id="overview">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>20XX</h3>
+                    <p>Year Established</p>
+                </div>
+                <div class="stat-card">
+                    <h3>000+</h3>
+                    <p>Faculty Members</p>
+                </div>
+                <div class="stat-card">
+                    <h3>00,000+</h3>
+                    <p>Alumni Network</p>
+                </div>
+                <div class="stat-card">
+                    <h3>00</h3>
+                    <p>Academic Programs</p>
+                </div>
+            </div>
+
+            <!-- Overview, Vision & Mission -->
+            <h2 class="section-title" id="mission">Vision & Mission</h2>
+            <div class="about-grid">
+                <div class="about-box">
+                    <h3>University Overview</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Vision</h3>
+                    <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Mission</h3>
+                    <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dummy Programs -->
+        <section id="programs" style="margin-top: 4rem;">
+            <h2 class="section-title">Academic Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h4>B.Sc. in Computer Science</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                </div>
+                <div class="program-card">
+                    <h4>B.Sc. in Electrical Engineering</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                </div>
+                <div class="program-card">
+                    <h4>Bachelor of Business Administration</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                </div>
+                <div class="program-card">
+                    <h4>B.Sc. in Data Science</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dummy Campus Info -->
+        <section id="campus" style="margin-top: 4rem;">
+            <h2 class="section-title">Permanent Campus</h2>
+            <div class="about-grid">
+                <div class="about-box">
+                    <h3>Campus Facilities</h3>
+                    <p>United City, Madani Avenue, Badda, Dhaka. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 United International University (Dummy Template). All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
